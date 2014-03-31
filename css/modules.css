@@ -1,0 +1,33 @@
+/**********
+EVENT LIST ENTRY
+***********/
+
+.item{
+  background-color: rgba(240,240,240,.8);
+  margin-top: 2em;
+}
+
+.item img{
+  width: 100%;
+  height: 10em;
+}
+
+.item h1{
+  display: inline-block;
+  margin:.3em 2.5%;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.item p{
+  color: #000;
+  margin:.5em 2.5%;
+}
+
+.event-list-pic{
+  background:url('http://placekitten.com/200/300') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 10em;
+}

@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>AFOMO | Event List</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/type.css">
   <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/layout.css">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 </head>
 <body>
   <header class="container">
-    Events Near You
+    <img src="img/logo.svg" alt="Logo">
+    <h1 class="header">Events Near You</h1>
     <nav>
       <a href="#">My Saved Events</a>
       <a href="#">Categories</a>
@@ -20,15 +24,16 @@
   <fieldset class="search container">
     <input type="text" name="category" value="Search categories">
     <input type="text" name="zip" value="Enter Zip Code">
-    <button class="search-submit">Search!</button>
+    <input type="submit" class="search-submit" value="Find Events!"></input>
   </fieldset>
   <section class="event-detail container">
-    <img src="img/event1.png" alt="Picture of event">
+    <div class="event-detail-image"></div>
     <h1>Event Name</h1>
+    <h2>4:30pm Saturday 5 April 2014  •  123 Awesome St. Seattle, WA</h2>
     <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
-    <a href="#">Save Event</a>
-    <a href="#">Facebook</a>
-    <a href="#">Twitter</a>
+    <a href="#" class="save-event">Save Event</a>
+    <a href="#" class="icon-facebook soc-link"></a>
+    <a href="#" class="icon-twitter soc-link"></a>
   </section>
 
 </body>
