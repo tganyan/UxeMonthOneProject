@@ -63,6 +63,12 @@
  	color: #FFF;
  }
 
+ h1{
+ 	font-size: 3em;
+ 	font-family: 'Helvetica Neue';
+
+ }
+
  .tagline {
 	font-size: 2em;
 	color: #FFF;
@@ -111,6 +117,15 @@ LOGIN PAGE
 fieldset>p{
 	text-align: center;
 	font-size: 1.25em;
+}
+
+/********
+EVENT PAGES
+********/
+.header{
+	color: #FFF;
+	font-size: 2em;
+	text-align: center;
 }
 
 /* #Media Queries
