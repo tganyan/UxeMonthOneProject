@@ -39,7 +39,7 @@
 
  input[type="text"]{
  	display: block;
- 	margin: 1em auto;
+ 	margin: .5em auto;
 
  }
 
@@ -126,6 +126,58 @@ EVENT PAGES
 	color: #FFF;
 	font-size: 2em;
 	text-align: center;
+}
+
+.event-detail {
+	background: rgba(240,240,240,.8);
+}
+
+.event-detail p{
+	color: #000;
+	margin: 1em;
+	max-width: 740px;
+}
+
+.event-detail h1{
+	margin-left: .65rem;
+	margin-top: .25em;
+}
+
+.event-detail h2{
+	margin-left: 1.4em;
+	margin-top: -1em;
+	font-size: .75em;
+	font-family: 'Helvetica Neue';
+	font-weight: bold;
+	line-height: 1.2em;
+
+
+}
+
+.event-detail-image{
+	background:url('http://placekitten.com/200/300') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 25em;
+}
+
+/*social media links*/
+
+.soc-link {
+	font-size: 1.5em;
+	text-decoration: none;
+	float: right;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.save-event {
+	margin-left: 1em;
+	text-decoration: none;
+	font-weight: bold;
+}
+.save-event:hover {
+	text-decoration: underline;
 }
 
 /* #Media Queries
