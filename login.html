@@ -15,18 +15,18 @@
 <body>
   <div class="container">
     <header>
-      <img src="#" alt="Logo">
+      <img src="img/logo.svg" alt="Logo">
     </header>
-    <fieldset class="login-form">
-    <form>
-        <label for="name"><h3 class="icon-user"></h3></label>
-        <input type="text" name="name" placeholer="username">
-        <label for="password"><h3 class="icon-lock"></h3></label>
-        <input type="text" name="password" placeholder="********">
-        <input type="submit" value="SIGN-IN">
+    <fieldset class="login-form" legend="Login">
+      <p>Login:</p>
+      <form action="event-list.html">
+      <input type="text" name="name" placeholder="username">
+      <input type="text" name="password" class="password" placeholder="********">
+      <input type="submit" value="SIGN IN YO!"></input>
       </form>
+
     </fieldset>
-    <h1>The easiest way to quickly find events in your neighborhood.</h1>
+    <h1 class="tagline">The easiest way to quickly find events in your neighborhood.</h1>
   </div>
 </body>
 </html>

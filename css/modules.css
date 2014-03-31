@@ -1,0 +1,18 @@
+/**********
+EVENT LIST ENTRY
+***********/
+
+.item{
+  background-color: rgba(240,240,240,.8);
+}
+
+.item img{
+  display: inline;
+  height: 10em;
+  margin-right: 2em;
+  float: left;
+}
+
+.item h1{
+  display: inline;
+}

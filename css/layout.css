@@ -16,9 +16,102 @@
 
 /* #Site Styles
 ================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ html, body{
+ 	width: 100%;
+ }
+
+ img{
+ 	max-width: 100%;
+ }
+
+ body{
+ 	background: url(../img/bg.jpg) no-repeat center center fixed;
+ 	background-size: cover;
+ }
+
+ header img{
+ 	margin-top: 2em;
+ }
+
+ input[type="text"]{
+ 	display: block;
+ 	margin: 1em auto;
+
+ }
+
+ 	input[type="text"] {
+  border: 3px #FFF;
+  font-size: 1.5em;
+  background-color: rgba(240,240,240,.8);
+  min-height: 2em;
+  width: 100%;
+}
+
+ .password:before{
+ 	font-family: 'icomoon'
+	content:'\e601';
+	color: #333;
+	position: absolute;
+ }
+
+ p{
+ 	font-family: 'Helvetica Neue', sans-serif;
+ 	color: #FFF;
+ }
+
+ .tagline {
+	font-size: 2em;
+	color: #FFF;
+	font-family: 'Helvetica Neue', sans-serif;
+	text-align: center;
+	line-height: 1.25em;
+	margin-top: 3em;
+ }
+
+ input[type=submit]{
+ 	position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #3895AD;
+  border: 0;
+  border-bottom: 2px solid #2C7386;
+  cursor: pointer;
+  box-shadow: inset 0 -2px #2C7386;
+ }
+
+  input[type=submit]:hover{
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2C7386;
+  border: 0;
+  border-bottom: 2px solid #2C7386;
+  box-shadow: inset 0 -2px #2C7386;
+ }
+
+
 
 /* #Page Styles
 ================================================== */
+
+/********
+LOGIN PAGE
+********/
+
+fieldset>p{
+	text-align: center;
+	font-size: 1.25em;
+}
 
 /* #Media Queries
 ================================================== */
