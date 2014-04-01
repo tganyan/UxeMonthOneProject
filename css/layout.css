@@ -37,18 +37,14 @@
  	margin-top: 2em;
  }
 
- input[type="text"]{
- 	display: block;
- 	margin: .5em auto;
-
- }
-
  	input[type="text"] {
   border: 3px #FFF;
   font-size: 1.5em;
   background-color: rgba(240,240,240,.8);
   min-height: 2em;
   width: 100%;
+	display: block;
+ 	margin: .5em auto;
 }
 
  .password:before{
@@ -150,8 +146,6 @@ EVENT PAGES
 	font-family: 'Helvetica Neue';
 	font-weight: bold;
 	line-height: 1.2em;
-
-
 }
 
 .event-detail-image{
@@ -159,6 +153,30 @@ EVENT PAGES
   background-size: cover;
   width: 100%;
   height: 25em;
+}
+
+.sidebar-title {
+		font-size: 2.5em;
+		color: white;
+		margin-top: 0;
+	}
+
+/*full-page menu*/
+
+.full-nav a {
+	color: white;
+	text-decoration: none;
+	float: right;
+	margin-top: 1em;
+	font-size: 1.25em;
+}
+
+.full-nav a:hover {
+	color: #000;
+}
+
+.margin-left {
+	margin-left: 1em;
 }
 
 /*social media links*/
@@ -183,20 +201,69 @@ EVENT PAGES
 /* #Media Queries
 ================================================== */
 
+	@media only screen and (min-width: 768px) {
+	#searchCategories {
+	  width: 42%;
+	}
+	#searchSubmit{
+	  width: 23%;
+	  height: 56px;
+	  margin-left: 1em;
+  }
+	#zipCode {
+		margin-left: 1em;
+		width: 30%;
+	}
+}
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen (max-width: 959px) {
+
+	.similar-events {
+		width: 15%;
+		float: right;
+		display: block;
+	}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.similar-events {
+		display: none;
+	}
+	.sidebar-title {
+		display: none;
+	}
+	.full-nav a {
+		font-size: 1em;
+		float: right;
+	}
+	.margin-left {
+		margin-left: 2.75em;
+	}
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+	.similar-events {
+		display: none;
+	}
+	.sidebar-title {
+		display: none;
+	}
+	.full-nav a {
+		font-size: 1em;
+		float: right;
+	}
+	.margin-left {
+		margin-left: 2.75em;
+	}
+	}
 
 
 /* #Font-Face
