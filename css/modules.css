@@ -3,8 +3,9 @@ EVENT LIST ENTRY
 ***********/
 
 .item{
-  background-color: rgba(240,240,240,.8);
+  background-color: rgba(240,240,240,.7);
   margin-top: 2em;
+  height: 19em;
 }
 
 .item img{
@@ -14,15 +15,26 @@ EVENT LIST ENTRY
 
 .item h1{
   display: inline-block;
-  margin:.3em 2.5%;
-  font-size: 2em;
+  margin:.4em 2.5% 0;
+  font-size: 2.5em;
   font-weight: bold;
   line-height: 1em;
 }
 
 .item p{
   color: #000;
-  margin:.5em 2.5%;
+  margin:.25em 2.5% 0;
+}
+
+.time{
+  font-weight: 800;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.location{
+  margin-bottom: 4em;
+  line-height: 1.25em;
 }
 
 .event-list-pic{
@@ -34,4 +46,21 @@ EVENT LIST ENTRY
 
 .left {
   float: left;
+}
+
+
+.nearby{
+  background-color: rgba(240,240,240,.7);
+  margin-top: 2em;
+  height: 19em
+}
+
+.nearby p{
+  color: #000;
+  margin:.25em 5% 0;
+}
+
+.nearby h1{
+  font-size: 1.5em;
+  margin:.1em 5% 0;
 }
