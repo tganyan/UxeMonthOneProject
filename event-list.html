@@ -17,7 +17,7 @@
       <img src="img/logo.svg" alt="Logo">
     </div>
     <div class="two-thirds column">
-      <nav class="full-nav a">
+      <nav class="full-nav">
         <a href="#" class="margin-left">Sign Out</a>
         <a href="#" class="margin-left">My Saved Events</a>
         <a href="#" class="margin-left">Categories</a>
@@ -28,9 +28,9 @@
   <div class="container">
     <div class="sixteen columns">
       <fieldset class="search">
-        <input type="text" name="category" value="Search categories">
-        <input type="text" class="left"  name="zip" value="Enter Zip Code">
-        <input type="submit" value="Find Events!"></input>
+        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search categories">
+        <input type="text" id="zipCode" class="left"  name="zip" placeholder="Enter Zip Code">
+        <input type="submit" class="left" id="searchSubmit" value="Find Events!"></input>
       </fieldset>
     </div>
     <div class="twelve columns">
@@ -45,12 +45,30 @@
             <p class="location">123 Awesome St. Seattle, WA</p>
           </div>
         </li>
+        <li class="event-entry">
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
+        <li class="event-entry">
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
       </ul>
     </div>
   <aside class="clearfix four columns">
-    <h1 class="sidebar-title">Similar Events</h1>
     <ul  class="similar-events">
       <li>
+        <h1 class="sidebar-title">Nearby Venues</h1>
         <div class="item clearfix">
           <div class="event-list-pic">
           </div>
@@ -69,6 +87,7 @@
         </div>
       </li>
       <li>
+        <h2 class="sidebar-title">Other Categories</h2>
         <div class="item clearfix">
           <div class="event-list-pic">
           </div>
