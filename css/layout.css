@@ -62,7 +62,6 @@
  h1{
  	font-size: 3em;
  	font-family: 'Helvetica Neue';
-
  }
 
  .tagline {
@@ -244,7 +243,7 @@ EVENT PAGES
 		float: right;
 	}
 	.margin-left {
-		margin-left: 2.75em;
+		margin-left: 2em;
 	}
 	}
 

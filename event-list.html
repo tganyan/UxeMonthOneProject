@@ -13,33 +13,71 @@
 </head>
 <body>
   <header class ="container">
-    <img src="img/logo.svg" alt="Logo">
-    <h1 class="header">Events Near You</h1>
-    <nav>
-      <a href="#">My Saved Events</a>
-      <a href="#">Categories</a>
-      <a href="#">My Profile</a>
-    </nav>
-  </header>
-
-  <fieldset class="search container">
-    <input type="text" name="category" value="Search categories">
-    <input type="text" class="left"  name="zip" value="Enter Zip Code">
-    <input type="submit" value="Find Events!"></input>
-  </fieldset>
-  <ul class="event-list container">
-  <li class="event-entry">
-    <div class="item clearfix">
-      <div class="event-list-pic"></div>
-      <h1>Kittens everywhere!</h1>
-      <p class="time">4:30pm Saturday</p>
-      <p class="location">123 Awesome St. Seattle, WA</p>
+    <div class="one-third column">
+      <img src="img/logo.svg" alt="Logo">
     </div>
-  </li>
-
-
-
-  </ul>
-
+    <div class="two-thirds column">
+      <nav class="full-nav a">
+        <a href="#" class="margin-left">Sign Out</a>
+        <a href="#" class="margin-left">My Saved Events</a>
+        <a href="#" class="margin-left">Categories</a>
+        <a href="#" class="margin-left">My Profile</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="sixteen columns">
+      <fieldset class="search">
+        <input type="text" name="category" value="Search categories">
+        <input type="text" class="left"  name="zip" value="Enter Zip Code">
+        <input type="submit" value="Find Events!"></input>
+      </fieldset>
+    </div>
+    <div class="twelve columns">
+      <h1 class="header">Events Near You</h1>
+      <ul class="event-list ">
+        <li class="event-entry">
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  <aside class="clearfix four columns">
+    <h1 class="sidebar-title">Similar Events</h1>
+    <ul  class="similar-events">
+      <li>
+        <div class="item clearfix">
+          <div class="event-list-pic">
+          </div>
+          <h1>Kittens everywhere!</h1>
+          <p class="time">4:30pm Saturday</p>
+          <p class="location">123 Awesome St. Seattle, WA</p>
+        </div>
+      </li>
+      <li>
+        <div class="item clearfix">
+          <div class="event-list-pic">
+          </div>
+          <h1>Kittens everywhere!</h1>
+          <p class="time">4:30pm Saturday</p>
+          <p class="location">123 Awesome St. Seattle, WA</p>
+        </div>
+      </li>
+      <li>
+        <div class="item clearfix">
+          <div class="event-list-pic">
+          </div>
+          <h1>Kittens everywhere!</h1>
+          <p class="time">4:30pm Saturday</p>
+          <p class="location">123 Awesome St. Seattle, WA</p>
+        </div>
+      </li>
+    </ul>
+  </aside>
 </body>
 </html>
