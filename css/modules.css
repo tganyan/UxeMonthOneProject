@@ -57,10 +57,27 @@ EVENT LIST ENTRY
 
 .nearby p{
   color: #000;
-  margin:.25em 5% 0;
+  margin:.0em 5% 0;
 }
 
 .nearby h1{
   font-size: 1.5em;
-  margin:.1em 5% 0;
+  margin:.1em 5% .2em 5%;
+}
+
+.similar-events li{
+  margin-bottom: .2em;
+}
+
+
+
+
+.filterbox{
+  background-color: transparent;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  border-radius: 2.5%;
+}
+
+.filterbox p, .filterbox h1{
+    color: #fff;
 }

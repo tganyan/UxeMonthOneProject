@@ -60,6 +60,11 @@
  	text-align: center;
  }*/
 
+ fieldset{
+ 	margin-top: 1em;
+
+ }
+
  input[type="text"] {
   border: 3px #FFF;
   font-size: 1.5em;
@@ -160,6 +165,8 @@ EVENT PAGES
 
 .event-detail {
 	background: rgba(240,240,240,.8);
+	margin-top: 2em;
+	padding-bottom: 2em;
 }
 
 .event-detail p{
@@ -192,32 +199,74 @@ EVENT PAGES
 .sidebar-title {
 		font-size: 2em;
 		color: white;
-		margin-top: 0;
+		margin-top: .75em;
+		line-height: 1em;
 	}
+
+.sidebar-title-other h1{
+	margin-bottom: 2em;
+}
 
 .other{
 	margin: .5em 0 -1em 0;
 }
 
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:20px 4px 1px 25px;
+    background:url(img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    color: #fff;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(/imgcheck_radio_sheet.png) -19px top no-repeat;
+}
+
+/********
+EVENT DETAIL PAGES
+********/
+
 
 /*social media links*/
 
 .soc-link {
-	font-size: 1.5em;
+	font-size: 3em;
 	text-decoration: none;
 	float: right;
 	margin-bottom: 1em;
-	margin-right: 1em;
+	margin-right: .5em;
 }
 
 .save-event {
-	margin-left: 1em;
+	margin-left: .5em;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 800;
+	margin-bottom: 2em;
+	font-family: 'Proxima Nova Rg';
+	font-size: 1.75em;
+	line-height: 1.75em;
 }
 .save-event:hover {
 	text-decoration: underline;
 }
+
+.event-detail>h2{
+	font-size: 1.25em;
+	margin-left: .75em;
+	text-transform: uppercase;
+}
+
+
 
 /* #Media Queries
 ================================================== */
