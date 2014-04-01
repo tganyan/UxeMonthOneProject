@@ -28,6 +28,8 @@
  	max-width: 100%;
  }
 
+
+
  body{
  	background: url(../img/bg.jpg) no-repeat center center fixed;
  	background-size: cover;
@@ -61,12 +63,20 @@
  input[type="text"] {
   border: 3px #FFF;
   font-size: 1.5em;
-  background-color: rgba(240,240,240,.8);
+  background-color: rgba(240,240,240,.0);
   min-height: 2em;
   width: 100%;
 	display: block;
- 	margin: .5em auto;
+ 	margin: .5em 0;
+ 	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+ 	color: #fff;
+	border-radius: 1.5em;
+	padding-left: 1em;
+	font-family: 'Proxima Nova Rg', sans-serif;
 }
+	input[type="text"]:focus{
+		color: #fff;
+	}
 
  .password:before{
  	font-family: 'icomoon'
@@ -100,9 +110,9 @@
  	position: relative;
   vertical-align: top;
   width: 100%;
-  height: 56px;
+  height: 2em;
   padding: 0;
-  font-size: 22px;
+  font-size: 1.5em;
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -111,6 +121,8 @@
   border-bottom: 2px solid #2C7386;
   cursor: pointer;
   box-shadow: inset 0 -2px #2C7386;
+  border-radius: 0;
+  margin-top: .5em;
  }
 
  input[type=submit]:hover{
@@ -142,8 +154,8 @@ EVENT PAGES
 ********/
 .header{
 	color: #FFF;
-	font-size: 2em;
-	text-align: center;
+	font-size: 4em;
+
 }
 
 .event-detail {
@@ -183,6 +195,9 @@ EVENT PAGES
 		margin-top: 0;
 	}
 
+.other{
+	margin: .5em 0 -1em 0;
+}
 
 
 /*social media links*/
@@ -208,59 +223,82 @@ EVENT PAGES
 ================================================== */
 
 	@media only screen and (min-width: 768px) {
-	#searchCategories {
-	  width: 42%;
-	}
-	#searchSubmit{
-	  width: 23%;
-	  height: 56px;
-	  margin-left: 1em;
-  }
-	#zipCode {
-		margin-left: 1em;
-		width: 30%;
-	}
+		#searchCategories {
+		  width: 42%;
+		}
+		#searchSubmit{
+		  width: 23%;
+		  height: 2em;
+		  margin-left: 1em;
+	  }
+		#zipCode {
+			margin-left: 1em;
+			width: 30%;
+		}
 
-	nav{
-		margin-top: 2em;
-		float: right;
-	}
+		nav{
+			margin-top: 2em;
+			float: right;
+		}
 }
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+
+		input[type="submit"]{
+			margin-top: 1em;
+			height: 2em;
+		}
+
+		#searchSubmit{
+			margin-left: .5em;
+			margin-top: .5em;
+		}
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen (max-width: 959px) {
 
-	.similar-events {
-		width: 15%;
+		.similar-events {
+			width: 15%;
+			float: right;
+			display: block;
+			background: rgba(240,240,240,.8);
+		}
+	/*	.full-nav a {
+		color: #FFF;
+		text-decoration: none;
 		float: right;
-		display: block;
-		background: rgba(240,240,240,.8);
-	}
-/*	.full-nav a {
-	color: #FFF;
-	text-decoration: none;
-	float: right;
-	margin-top: 1em;
-	font-size: 1.25em;
-}*/
+		margin-top: 1em;
+		font-size: 1.25em;
+	}*/
 
-.full-nav a:hover {
-	color: #AAA;
-}
+		.full-nav a:hover {
+			color: #AAA;
+		}
 
-.margin-left {
-	margin-left: 1em;
-}
+		.margin-left {
+			margin-left: 1em;
+		}
+
+		input[type="submit"]{
+			width: 80%
+			vertical-align: middle;
+		}
+		input[type="text"]{
+			margin: -1em;
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 
-		/*full-page menu*/
+		.header{
+			text-align: left;
+		}
 
-
+		#searchSubmit{
+			margin: 1em 0;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -271,6 +309,10 @@ EVENT PAGES
 	.sidebar-title {
 		display: none;
 	}
+
+	input[type="submit"]{
+			margin-top: 1em;
+		}
 /*	.full-nav a {
 		font-size: 1em;
 		float: right;
@@ -280,6 +322,10 @@ EVENT PAGES
 	}*/
 	}
 
+	.header{
+		text-align: left;
+	}
+
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	.similar-events {
@@ -287,6 +333,15 @@ EVENT PAGES
 	}
 	.sidebar-title {
 		display: none;
+	}
+
+	.header{
+		text-align: center;
+		font-size: 3em;
+	}
+
+	input[type="submit"]{
+		margin-top: 1em;
 	}
 	/*.full-nav a {
 		font-size: 1em;
