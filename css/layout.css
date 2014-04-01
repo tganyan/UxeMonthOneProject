@@ -37,6 +37,27 @@
  	margin-top: 2em;
  }
 
+ nav{
+ 	text-align: center;
+ 	margin: 1em 0;
+ }
+
+ nav a{
+ 	text-decoration: none;
+ 	color: #FFF;
+ 	margin: .2em .75em;
+ 	display: inline-block;
+ }
+
+ nav a:hover{
+ 	color: #CCC;
+ }
+
+ /*.full-nav a{
+ 	margin: 0 auto;
+ 	text-align: center;
+ }*/
+
  input[type="text"] {
   border: 3px #FFF;
   font-size: 1.5em;
@@ -160,23 +181,7 @@ EVENT PAGES
 		margin-top: 0;
 	}
 
-/*full-page menu*/
 
-.full-nav a {
-	color: white;
-	text-decoration: none;
-	float: right;
-	margin-top: 1em;
-	font-size: 1.25em;
-}
-
-.full-nav a:hover {
-	color: #000;
-}
-
-.margin-left {
-	margin-left: 1em;
-}
 
 /*social media links*/
 
@@ -213,6 +218,11 @@ EVENT PAGES
 		margin-left: 1em;
 		width: 30%;
 	}
+
+	nav{
+		margin-top: 2em;
+		float: right;
+	}
 }
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {}
@@ -226,10 +236,30 @@ EVENT PAGES
 		display: block;
 		background: rgba(240,240,240,.8);
 	}
+/*	.full-nav a {
+	color: #FFF;
+	text-decoration: none;
+	float: right;
+	margin-top: 1em;
+	font-size: 1.25em;
+}*/
+
+.full-nav a:hover {
+	color: #AAA;
+}
+
+.margin-left {
+	margin-left: 1em;
+}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+
+		/*full-page menu*/
+
+
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -239,13 +269,13 @@ EVENT PAGES
 	.sidebar-title {
 		display: none;
 	}
-	.full-nav a {
+/*	.full-nav a {
 		font-size: 1em;
 		float: right;
 	}
 	.margin-left {
 		margin-left: 2em;
-	}
+	}*/
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -256,13 +286,13 @@ EVENT PAGES
 	.sidebar-title {
 		display: none;
 	}
-	.full-nav a {
+	/*.full-nav a {
 		font-size: 1em;
 		float: right;
 	}
 	.margin-left {
 		margin-left: 2.75em;
-	}
+	}*/
 	}
 
 
