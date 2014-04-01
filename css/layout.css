@@ -76,25 +76,27 @@
  }
 
  p{
- 	font-family: 'Helvetica Neue', sans-serif;
+ 	font-family: 'Proxima Nova Rg', sans-serif;
  	color: #FFF;
  }
 
  h1{
  	font-size: 3em;
- 	font-family: 'Helvetica Neue';
+ 	font-family: 'AlternateGothic2 BT';
+ 	text-transform: uppercase;
  }
 
  .tagline {
 	font-size: 2em;
 	color: #FFF;
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'AlternateGothic2 BT', sans-serif;
 	text-align: center;
 	line-height: 1.25em;
 	margin-top: 3em;
  }
 
  input[type=submit]{
+ 	font-family: 'Proxima Nova Rg', sans-serif;
  	position: relative;
   vertical-align: top;
   width: 100%;
@@ -163,7 +165,7 @@ EVENT PAGES
 	margin-left: 1.4em;
 	margin-top: -1em;
 	font-size: .75em;
-	font-family: 'Helvetica Neue';
+	font-family: 'AlternateGothic2 BT';
 	font-weight: bold;
 	line-height: 1.2em;
 }
