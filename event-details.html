@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>AFOMO | Event List</title>
+  <title>AFOMO | Event Details</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/type.css">
@@ -13,28 +13,71 @@
 </head>
 <body>
   <header class="container">
-    <img src="img/logo.svg" alt="Logo">
-    <h1 class="header">Events Near You</h1>
-    <nav>
-      <a href="#">My Saved Events</a>
-      <a href="#">Categories</a>
-      <a href="#">My Profile</a>
-    </nav>
+    <div class="one-third column">
+      <img src="img/logo.svg" alt="Logo">
+    </div>
+    <div class="two-thirds column">
+      <nav class="full-nav a">
+        <a href="#" class="margin-left">Sign Out</a>
+        <a href="#" class="margin-left">My Saved Events</a>
+        <a href="#" class="margin-left">Categories</a>
+        <a href="#">My Profile</a>
+      </nav>
+    </div>
   </header>
-  <fieldset class="search container">
-    <input type="text" name="category" value="Search categories">
-    <input type="text" name="zip" value="Enter Zip Code">
-    <input type="submit" class="search-submit" value="Find Events!"></input>
-  </fieldset>
-  <section class="event-detail container">
-    <div class="event-detail-image"></div>
-    <h1>Event Name</h1>
-    <h2>4:30pm Saturday 5 April 2014  •  123 Awesome St. Seattle, WA</h2>
-    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
-    <a href="#" class="save-event">Save Event</a>
-    <a href="#" class="icon-facebook soc-link"></a>
-    <a href="#" class="icon-twitter soc-link"></a>
-  </section>
-
+  <div class="container">
+    <div class="sixteen columns">
+      <fieldset class="clearfix">
+        <input type="text" class="left" id="searchCategories" name="category" value="Search categories">
+        <input type="text" class="left" id="zipCode" name="zip" value="Enter Zip Code">
+        <input type="submit" class=" left" id="searchSubmit" value="Find Events!"></input>
+      </fieldset>
+    </div>
+  </div>
+  <div class="container">
+    <div class="twelve columns">
+      <section class="event-detail">
+        <div class="event-detail-image"></div>
+        <h1>Event Name</h1>
+        <h2>4:30pm Saturday 5 April 2014  •  123 Awesome St. Seattle, WA</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
+        <a href="#" class="save-event">Save Event</a>
+        <a href="#" class="icon-facebook soc-link"></a>
+        <a href="#" class="icon-twitter soc-link"></a>
+      </section>
+    </div>
+    <aside class="clearfix four columns">
+      <h1 class="sidebar-title">Similar Events</h1>
+      <ul  class="similar-events">
+        <li>
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
+        <li>
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
+        <li>
+          <div class="item clearfix">
+            <div class="event-list-pic">
+            </div>
+            <h1>Kittens everywhere!</h1>
+            <p class="time">4:30pm Saturday</p>
+            <p class="location">123 Awesome St. Seattle, WA</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+  </div>
 </body>
 </html>
