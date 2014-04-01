@@ -28,7 +28,7 @@
   <div class="container">
     <div class="sixteen columns">
       <fieldset class="search">
-        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search categories">
+        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
         <input type="text" id="zipCode" class="left"  name="zip" placeholder="Enter Zip Code">
         <input type="submit" class="left" id="searchSubmit" value="Find Events!"></input>
       </fieldset>
@@ -68,6 +68,19 @@
   <aside class="clearfix four columns">
     <ul  class="similar-events">
       <li>
+        <li>
+        <h1 class="sidebar-title">Category Filter</h1>
+        <div class="nearby filterbox clearfix">
+          <form action="">
+            <input type="checkbox" id="c1" name="music"/><label for="c1"><span>Music</span></label>
+            <input type="checkbox" id="c2" name="art"/><label for="c2"><span>Art</span></label>
+            <input type="checkbox" id="c3" name="food"/><label for="c3"><span>Food</span></label>
+            <input type="checkbox" id="c4" name="theatre"/><label for="c4"><span>Theatre</span></label>
+            <input type="checkbox" id="c5" name="cats"/><label for="c5"><span>Cats</span></label>
+            <input type="checkbox" id="c6" name="technology"/><label for="c6"><span>Technology</span></label>
+          </form>
+        </div>
+      </li>
         <h1 class="sidebar-title">Nearby Venues</h1>
         <div class="nearby clearfix">
           <div class="event-list-pic">
@@ -86,16 +99,7 @@
           <p class="location">123 Awesome St. Seattle, WA</p>
         </div>
       </li>
-      <li>
-        <h1 class="sidebar-title other">Other Categories</h1>
-        <div class="nearby clearfix">
-          <div class="event-list-pic">
-          </div>
-          <h1>Kittens everywhere!</h1>
-          <p class="time">4:30pm Saturday</p>
-          <p class="location">123 Awesome St. Seattle, WA</p>
-        </div>
-      </li>
+
     </ul>
   </aside>
 </body>

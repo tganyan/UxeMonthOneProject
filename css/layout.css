@@ -199,11 +199,37 @@ EVENT PAGES
 .sidebar-title {
 		font-size: 2em;
 		color: white;
-		margin-top: 0;
+		margin-top: .75em;
+		line-height: 1em;
 	}
+
+.sidebar-title-other h1{
+	margin-bottom: 2em;
+}
 
 .other{
 	margin: .5em 0 -1em 0;
+}
+
+input[type="checkbox"]{
+	display: none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:20px 4px 1px 25px;
+    background:url(img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+    color: #fff;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(/imgcheck_radio_sheet.png) -19px top no-repeat;
 }
 
 /********
@@ -239,6 +265,8 @@ EVENT DETAIL PAGES
 	margin-left: .75em;
 	text-transform: uppercase;
 }
+
+
 
 /* #Media Queries
 ================================================== */
