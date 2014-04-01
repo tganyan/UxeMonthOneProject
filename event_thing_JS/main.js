@@ -26,12 +26,27 @@ $(document).ready(function(){
     if(query % 2 === 0){
 
       for(var i=0; i < events.length; i++){
-        $("#event").append("<li class='item'><img src='" + events[i][0] +  "'"+ "alt='"+ events[i][4] + "'>" + "<br>" + "<h1>" + events[i][1] + "</h1>" + "<br>" + "<p class='time'>" + events[i][2] + query + "<br>" + events[i][3] + "</p></li>");
+
+      var title1 = events[i][1];
+      var address1 = events[i][2];
+      var date1 = events[i][3];
+      $(".event-list").append(
+          "<li class='event-entry'><div class='item cleafix'><div class='event-list-pic' style='background-image:url(" + events2[i][0] + ")'></div><h1>" + title1 + "</h1><br><p class='location'>" + address1 + query + "</p><br><p class='time'" +  date1 + "</p></div></li>"
+      );
+
+        // $("ul").append("<li class='item'><img src='" + events[i][0] +  "'"+ "alt='"+ events[i][4] + "'>" + "<br>" + "<h1>" + events[i][1] + "</h1>" + "<br>" + "<p class='time'>" + events[i][2] + query + "<br>" + events[i][3] + "</p></li>");
       }
     }
     else{
       for(var j=0; j < events2.length; j++){
-        $("#event").append("<li class='item'><img src='" + events2[j][0] +  "'"+ "alt='"+ events2[j][4] + "'>" + "<br>" + "<h1>" + events2[j][1] + "</h1>" + "<br>" + "<p class='time'>" + events2[j][2] + query + "<br>" + events2[j][3] + "</p></li>");
+        var image = "style='background-image:url(" + events2[j][0] + ")'"
+        var title = events2[j][1];
+        var address = events2[j][2];
+        var date = events2[j][3];
+
+        $(".event-list").append(
+            "<li class='event-entry'><div class='item cleafix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><br><p class='location'>" + address + query + "</p><br><p class='time'" +  date + "</p></div></li>"
+        );
       }
     }
     return false;
