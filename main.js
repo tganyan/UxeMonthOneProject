@@ -1,3 +1,11 @@
+  if( $(window).width() > 763){
+    console.log("greater than");
+  }
+  else{
+    console.log("less than");
+  }
+
+
 $(document).ready(function(){
 
 $(".btn-slide").click(function(){
