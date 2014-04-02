@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  // $(".header").hide();
+
 
   var events = [];
   events[0] = ["images/5kole.jpg", "Fiesta 5k Ole!","1247 15th Ave E Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];
@@ -20,6 +22,8 @@ $(document).ready(function(){
 
   $("#searchSubmit").click(function(){
     var query = $("#zipCode").val();
+
+    $(".header").show();
 
     if(query % 2 === 0){
 
@@ -54,6 +58,8 @@ $(document).ready(function(){
   $("input").keypress(function(theKeyBeingPassed){
   if (theKeyBeingPassed.which == 13) {
     var query = $("#zipCode").val();
+
+    $(".header").show();
 
     if(query % 2 === 0){
 
