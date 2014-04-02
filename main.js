@@ -1,9 +1,4 @@
-  if( $(window).width() > 763){
-    console.log("greater than");
-  }
-  else{
-    console.log("less than");
-  }
+
 
 
 $(document).ready(function(){
@@ -11,6 +6,15 @@ $(document).ready(function(){
 $(".btn-slide").click(function(){
   $("#panel").slideToggle("slow");
   $(this).toggleClass("active");
+});
+
+$(window).resize(function(){
+  var window = $(window).width();
+  if  (window >= 767){
+    $("#panel").css("display","none");
+  } else {
+    $("#panel").css("display","block");
+  }
 });
 
   var events = [];
