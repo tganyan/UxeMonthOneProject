@@ -244,6 +244,28 @@ EVENT DETAIL PAGES
 	text-transform: uppercase;
 }
 
+/*menu slider*/
+
+.btn-slide {
+
+}
+
+#panel {
+	height: 40%;
+	width: 100%;
+	display: none;
+	background-color: tomato;
+}
+
+.active {
+	display: block;
+}
+
+.slide {
+	margin: 0;
+	padding: 0;
+}
+
 
 
 /* #Media Queries
@@ -266,6 +288,10 @@ EVENT DETAIL PAGES
 		nav{
 			margin-top: 2em;
 			float: right;
+		}
+
+		.mobile-nav{
+			display: none;
 		}
 }
 	/* Smaller than standard 960 (devices and browsers) */
@@ -318,6 +344,10 @@ EVENT DETAIL PAGES
 
 		#searchSubmit{
 			margin: 1em 0;
+		}
+
+		.full-nav{
+			display: none;
 		}
 	}
 

@@ -14,8 +14,15 @@
 </head>
 <body>
   <header class ="container">
+    <nav id="panel">
+        <a href="#">Sign Out</a>
+        <a href="#">My Saved Events</a>
+        <a href="#">Categories</a>
+        <a href="#">My Profile</a>
+    </nav>
+    <a href="#" class="btn-slide">Menu</a>
     <div class="one-third column">
-      <a href="event-list.html"><img src="img/logo.svg" alt="Logo"></a>
+      <img src="img/logo.svg" alt="Logo">
     </div>
     <div class="two-thirds column">
       <nav class="full-nav">
@@ -45,28 +52,13 @@
         <li>
         <h1 class="sidebar-title">Category Filter</h1>
         <div class="nearby filterbox clearfix">
-          <div class="controls">
-            <input id='check-1' type="checkbox" name='check-1' checked='checked' />
-            <label for="check-1">Music</label>
-
-             <input id='check-2' type="checkbox" name='check-1' />
-            <label for="check-2">Art</label>
-
-            <input id='check-3' type="checkbox" name='check-1' />
-            <label for="check-3">Theatre</label>
-
-            <input id='check-4' type="checkbox" name='check-1' />
-            <label for="check-4">Food</label>
-
-            <input id='check-5' type="checkbox" name='check-1' />
-            <label for="check-5">Sports</label>
-
-            <input id='check-6' type="checkbox" name='check-1' />
-            <label for="check-6">Technology</label>
-
-            <input id='check-7' type="checkbox" name='check-1' />
-            <label for="check-7">Cats</label>
-          </div>
+          <form action="">
+            <input type="checkbox" id="c1" name="music"/><label for="c1"><span>Music</span></label>
+            <input type="checkbox" id="c2" name="art"/><label for="c2"><span>Art</span></label>
+            <input type="checkbox" id="c3" name="food"/><label for="c3"><span>Food</span></label>
+            <input type="checkbox" id="c4" name="theatre"/><label for="c4"><span>Theatre</span></label>
+            <input type="checkbox" id="c5" name="cats"/><label for="c5"><span>Cats</span></label>
+            <input type="checkbox" id="c6" name="technology"/><label for="c6"><span>Technology</span></label>
           </form>
         </div>
       </li>
