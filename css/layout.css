@@ -28,8 +28,6 @@
  	max-width: 100%;
  }
 
-
-
  body{
  	background: url(../img/bg.jpg) no-repeat center center fixed;
  	background-size: cover;
@@ -211,27 +209,6 @@ EVENT PAGES
 	margin: .5em 0 -1em 0;
 }
 
-input[type="checkbox"]{
-	display: none;
-}
-
-input[type="checkbox"] + label span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:20px 4px 1px 25px;
-    background:url(img/check_radio_sheet.png) left top no-repeat;
-    cursor:pointer;
-    color: #fff;
-    font-family: 'Proxima Nova Rg', sans-serif;
-    font-size: 1.2em;
-    font-weight: 800;
-}
-
-input[type="checkbox"]:checked + label span {
-    background:url(/imgcheck_radio_sheet.png) -19px top no-repeat;
-}
-
 /********
 EVENT DETAIL PAGES
 ********/
@@ -313,13 +290,6 @@ EVENT DETAIL PAGES
 			display: block;
 			background: rgba(240,240,240,.8);
 		}
-	/*	.full-nav a {
-		color: #FFF;
-		text-decoration: none;
-		float: right;
-		margin-top: 1em;
-		font-size: 1.25em;
-	}*/
 
 		.full-nav a:hover {
 			color: #AAA;
@@ -360,20 +330,13 @@ EVENT DETAIL PAGES
 	}
 
 	input[type="submit"]{
-			margin-top: 1em;
+			margin: 1em auto 0;
 		}
-/*	.full-nav a {
-		font-size: 1em;
-		float: right;
-	}
-	.margin-left {
-		margin-left: 2em;
-	}*/
 	}
 
-	.header{
+/*	.header{
 		text-align: left;
-	}
+	}*/
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
