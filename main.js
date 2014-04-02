@@ -1,7 +1,17 @@
+  if( $(window).width() > 763){
+    console.log("greater than");
+  }
+  else{
+    console.log("less than");
+  }
+
+
 $(document).ready(function(){
 
-  // $(".header").hide();
-
+$(".btn-slide").click(function(){
+  $("#panel").slideToggle("slow");
+  $(this).toggleClass("active");
+});
 
   var events = [];
   events[0] = ["images/5kole.jpg", "Fiesta 5k Ole!","1247 15th Ave E Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];

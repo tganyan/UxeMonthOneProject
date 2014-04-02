@@ -53,6 +53,10 @@
  	color: #CCC;
  }
 
+ nav a:visited{
+ 	color: #FFF;
+ }
+
  /*.full-nav a{
  	margin: 0 auto;
  	text-align: center;
@@ -159,7 +163,7 @@ EVENT PAGES
 	color: #FFF;
 	font-size: 4em;
 	display: none;
-
+	/*margin-top: 2em;*/
 }
 
 .event-detail {
@@ -244,6 +248,63 @@ EVENT DETAIL PAGES
 	text-transform: uppercase;
 }
 
+/*Menu slider*/
+
+.btn-slide {
+	color: #222;
+	text-decoration: none;
+	text-align: center;
+	background-color: #FFF;
+	width: 100%;
+	height: 2em;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding-top: .25em;
+}
+
+.btn-slide a{
+	line-height: 1.5em;
+	font-size: 1.5em;
+
+}
+
+/*.btn-slide:visited{
+	color: #FFF;
+	text-decoration: none;
+}*/
+
+#panel{
+	height: 40%;
+	width: 100%;
+	display: none;
+	background-color: #FFF;
+	color: #333;
+	text-align: center;
+	margin-top: -.25em;
+}
+
+#panel a:visited{
+	color: #333;
+
+}
+
+#panel a{
+	display: block;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+.active {
+	display: block;
+
+}
+
+.active a{
+	display: block;
+	text-align: center;
+}
 
 
 /* #Media Queries
@@ -266,6 +327,22 @@ EVENT DETAIL PAGES
 		nav{
 			margin-top: 2em;
 			float: right;
+		}
+
+		.mobile-nav{
+			display: none;
+		}
+
+		#panel{
+			display: none;
+		}
+
+		.active{
+			display: none;
+		}
+
+		.btn-slide{
+			display: none;
 		}
 }
 	/* Smaller than standard 960 (devices and browsers) */
@@ -318,6 +395,10 @@ EVENT DETAIL PAGES
 
 		#searchSubmit{
 			margin: 1em 0;
+		}
+
+		.full-nav{
+			display: none;
 		}
 	}
 
