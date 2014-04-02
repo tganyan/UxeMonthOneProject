@@ -2,12 +2,12 @@ $(document).ready(function(){
 
 
   var events = [];
-  events[0] = ["http://placekitten.com/200/200", "Fiesta 5k Ole!","1247 15th Ave E Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];
-  events[1] = ["http://placekitten.com/200/200", "The Jordan World Circus","110 9th Ave SW Puyallup, WA ","Tuesday, April 4, 2014 at 4:00 PM","Photo of The Jordan World Circus."];
-  events[2] = ["http://placekitten.com/200/200", "John Gottman, Ph.D. -Making Love Last and Marriage Work","1119 8th Ave Seattle WA ","Monday, May 5, 2014 at 7:00 PM", "Photo of John Gottman."];
-  events[3] = ["http://placekitten.com/200/200", "Bacon and Beer Classic","1250 1st Ave S Seattle, WA ","Saturday, May 17, 2014 at 1:00PM", "Photo of Beer and Bacon Classic."];
-  events[4] = ["http://placekitten.com/200/200", "Emerald City Author Event","1415 5th Ave Seattle, WA ","Saturday, June 14, 2014 at 11:30 AM", "Photo of Emerald City Author Event."];
-  events[5] = ["http://placekitten.com/200/200", "Seattle Challenge 2014: The Ultimate Urban Scavenger Race","731 Westlake Ave N Seattle, WA ","Saturday, May 3, 2014 at 1:00 PM","Photo of Seattle Challenge 2014."];
+  events[0] = ["images/5kole.jpg", "Fiesta 5k Ole!","1247 15th Ave E Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];
+  events[1] = ["images/circus.jpg", "The Jordan World Circus","110 9th Ave SW Puyallup, WA ","Tuesday, April 4, 2014 at 4:00 PM","Photo of The Jordan World Circus."];
+  events[2] = ["images/johnGottman.jpg", "John Gottman, Ph.D. -Making Love Last and Marriage Work","1119 8th Ave Seattle WA ","Monday, May 5, 2014 at 7:00 PM", "Photo of John Gottman."];
+  events[3] = ["images/bb.jpeg", "Bacon and Beer Classic","1250 1st Ave S Seattle, WA ","Saturday, May 17, 2014 at 1:00PM", "Photo of Beer and Bacon Classic."];
+  events[4] = ["images/emeraldCity.png", "Emerald City Author Event","1415 5th Ave Seattle, WA ","Saturday, June 14, 2014 at 11:30 AM", "Photo of Emerald City Author Event."];
+  events[5] = ["images/seattleChal.jpg", "Seattle Challenge 2014: The Ultimate Urban Scavenger Race","731 Westlake Ave N Seattle, WA ","Saturday, May 3, 2014 at 1:00 PM","Photo of Seattle Challenge 2014."];
 
   var events2 = [];
   events2[0] = ["images/seattleVice.jpg","Seattle Vice","700 Union St Seattle, WA ","Thursday, April 19, 2014 at 8:30PM","Photo of Seattle Vice event."];
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
       $(".event-list").append(
-          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><br><p class='time'>" + events[i][3] + "</p><br><p class='location'>" +  address1 + query + "</p></div></li>"
+          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><p class='time'>" + events[i][3] + "</p><p class='location'>" +  address1 + query + "</p></div></li>"
       );
 
     }
@@ -44,11 +44,46 @@ $(document).ready(function(){
         var date = events2[j][3];
 
       $(".event-list").append(
-          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><br><p class='time'>" + events2[j][3] + "</p><br><p class='location'>" +  address + query + "</p></div></li>"
+          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><p class='time'>" + events2[j][3] + "</p><p class='location'>" +  address + query + "</p></div></li>"
       );
       }
     }
     return false;
+  });
+
+  $("input").keypress(function(theKeyBeingPassed){
+  if (theKeyBeingPassed.which == 13) {
+    var query = $("#zipCode").val();
+
+    if(query % 2 === 0){
+
+      for(var i=0; i < events.length; i++){
+
+      var title1 = events[i][1];
+      var address1 = events[i][2];
+      var date1 = events[i][3];
+
+
+      $(".event-list").append(
+          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><p class='time'>" + events[i][3] + "</p><p class='location'>" +  address1 + query + "</p></div></li>"
+      );
+
+    }
+  }
+    else{
+      for(var j=0; j < events2.length; j++){
+        var image = "style='background-image:url(" + events2[j][0] + ")'"
+        var title = events2[j][1];
+        var address = events2[j][2];
+        var date = events2[j][3];
+
+      $(".event-list").append(
+          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><p class='time'>" + events2[j][3] + "</p><p class='location'>" +  address + query + "</p></div></li>"
+      );
+      }
+    }
+    return false;
+  }
   });
 
 });
