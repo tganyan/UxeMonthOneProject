@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
   var events = [];
-  events[0] = ["images/5kole.jpg", "Fiesta 5k Ole!","1247 15th Ave E <br> Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];
+  events[0] = ["http://placekitten.com/200/200", "Fiesta 5k Ole!","1247 15th Ave E <br> Seattle, WA ","Saturday, May 3, 2014 at 9:30 AM","Photo of Fiest 5k Ole."];
   events[1] = ["images/circus.jpg", "The Jordan World Circus","110 9th Ave SW <br> Puyallup, WA ","Tuesday, April 4, 2014 at 4:00 PM","Photo of The Jordan World Circus."];
   events[2] = ["images/johnGottman.jpg", "John Gottman, Ph.D. -Making Love Last and Marriage Work","1119 8th Ave <br> Seattle WA ","Monday, May 5, 2014 at 7:00 PM", "Photo of John Gottman."];
   events[3] = ["images/bb.jpeg", "Bacon and Beer Classic","1250 1st Ave S <br> Seattle, WA ","Saturday, May 17, 2014 at 1:00PM", "Photo of Beer and Bacon Classic."];
@@ -21,17 +21,31 @@ $(document).ready(function(){
   $("#searchButton").click(function(){
     var query = $("#query").val();
 
-    console.log(Number(query));
-
     if(query % 2 === 0){
 
       for(var i=0; i < events.length; i++){
-        $("#event").append("<li class='item'><img src='" + events[i][0] +  "'"+ "alt='"+ events[i][4] + "'>" + "<br>" + "<h1>" + events[i][1] + "</h1>" + "<br>" + "<p class='time'>" + events[i][2] + query + "<br>" + events[i][3] + "</p></li>");
-      }
+
+      var title1 = events[i][1];
+      var address1 = events[i][2];
+      var date1 = events[i][3];
+
+
+      $(".event-list").append(
+          "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><br><p class='location'>" + address1 + query + "</p><br><p class='time'" +  date1 + "</p></div></li>"
+      );
+
     }
+  }
     else{
       for(var j=0; j < events2.length; j++){
-        $("#event").append("<li class='item'><img src='" + events2[j][0] +  "'"+ "alt='"+ events2[j][4] + "'>" + "<br>" + "<h1>" + events2[j][1] + "</h1>" + "<br>" + "<p class='time'>" + events2[j][2] + query + "<br>" + events2[j][3] + "</p></li>");
+        var image = "style='background-image:url(" + events2[j][0] + ")'"
+        var title = events2[j][1];
+        var address = events2[j][2];
+        var date = events2[j][3];
+
+        $(".event-list").append(
+            "<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><br><p class='location'>" + address + query + "</p><br><p class='time'" +  date + "</p></div></li>"
+        );
       }
     }
     return false;
