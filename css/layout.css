@@ -500,10 +500,10 @@ EVENT DETAIL PAGES
 	@media only screen (max-width: 959px) {
 
 		.similar-events {
-			width: 15%;
+			width: 100%;
 			float: right;
 			display: block;
-			background: rgba(240,240,240,.8);
+			/*background: rgba(240,240,240,.8);*/
 		}
 
 		.full-nav a:hover {
