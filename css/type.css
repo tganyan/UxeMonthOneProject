@@ -59,9 +59,20 @@
 
 .icon-facebook:before {
   content: "\e602";
+  color: #333;
 }
+
+.icon-facebook:hover:before {
+  color: #777;
+}
+
 .icon-twitter:before {
   content: "\e603";
+  color: #333;
+}
+
+.icon-twitter:hover:before {
+  color: #777;
 }
 
 /*end icon fonts*/

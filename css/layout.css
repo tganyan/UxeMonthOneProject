@@ -380,6 +380,7 @@ EVENT DETAIL PAGES
 	float: right;
 	margin-bottom: 1em;
 	margin-right: .5em;
+	color: #333;
 }
 
 .save-event {
@@ -390,9 +391,15 @@ EVENT DETAIL PAGES
 	font-family: 'Proxima Nova Rg';
 	font-size: 1.75em;
 	line-height: 1.75em;
+	color: #333;
+}
+
+.save-event:visited{
+	color: #333;
 }
 .save-event:hover {
 	text-decoration: underline;
+	color: #333;
 }
 
 .event-detail>h2{
