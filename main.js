@@ -38,6 +38,7 @@ $(document).ready(function(){
   function Search(){
     var query = $("#zipCode").val();
     $(".header").show();
+    $(".content-title").hide();
     if(query % 2 === 0){
       for(var i=0; i < events.length; i++){
         var title1 = events[i][1];
