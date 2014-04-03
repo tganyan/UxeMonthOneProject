@@ -12,73 +12,78 @@
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 </head>
 <body>
-  <header class="container">
-    <div class="one-third column">
-      <a href="event-list.html"><img src="img/logo.svg" alt="Logo"></a>
+  <div class="page-wrap">
+    <header class="container">
+      <div class="one-third column">
+        <a href="event-list.html"><img src="img/logo.svg" alt="Logo"></a>
+      </div>
+      <div class="two-thirds column">
+        <nav class="full-nav a">
+          <a href="#" class="margin-left">Sign Out</a>
+          <a href="#" class="margin-left">My Saved Events</a>
+          <a href="#" class="margin-left">Categories</a>
+          <a href="#">My Profile</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sixteen columns">
+        <fieldset class="clearfix">
+          <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
+          <input type="text" class="left" id="zipCode" name="zip" placeholder="Enter Zip Code">
+          <input type="submit" class=" left" id="searchSubmit" value="Find Events!"></input>
+        </fieldset>
+      </div>
     </div>
-    <div class="two-thirds column">
-      <nav class="full-nav a">
-        <a href="#" class="margin-left">Sign Out</a>
-        <a href="#" class="margin-left">My Saved Events</a>
-        <a href="#" class="margin-left">Categories</a>
-        <a href="#">My Profile</a>
-      </nav>
-    </div>
-  </header>
-  <div class="container">
-    <div class="sixteen columns">
-      <fieldset class="clearfix">
-        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
-        <input type="text" class="left" id="zipCode" name="zip" placeholder="Enter Zip Code">
-        <input type="submit" class=" left" id="searchSubmit" value="Find Events!"></input>
-      </fieldset>
+    <div class="container">
+      <div class="twelve columns">
+        <h1 class="content-title">Event details</h1>
+        <section class="event-detail">
+          <div class="event-detail-image"></div>
+          <h1>5K Ole!</h1>
+          <h2>4:30pm Saturday 5 April 2014  •  123 Awesome St. Seattle, WA</h2>
+          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
+          <a href="#" class="save-event">Save Event</a>
+          <a href="#" class="icon-facebook soc-link"></a>
+          <a href="#" class="icon-twitter soc-link"></a>
+        </section>
+      </div>
+      <aside class="clearfix four columns">
+        <h1 class="sidebar-title">Similar Events</h1>
+        <ul  class="similar-events">
+          <li>
+            <div class="similar clearfix">
+              <div class="similar-list-pic1">
+              </div>
+              <h1>5K for Kittens</h1>
+              <p class="time">4:30pm Saturday</p>
+              <p class="location">123 Awesome St. Seattle, WA</p>
+            </div>
+          </li>
+          <li>
+            <div class="similar clearfix">
+              <div class="similar-list-pic2">
+              </div>
+              <h1>Mercer Island 5K</h1>
+              <p class="time">4:30pm Saturday</p>
+              <p class="location">123 Awesome St. Seattle, WA</p>
+            </div>
+          </li>
+          <li>
+            <div class="similar clearfix">
+              <div class="similar-list-pic3">
+              </div>
+              <h1>Sounders 5K</h1>
+              <p class="time">4:30pm Saturday</p>
+              <p class="location">123 Awesome St. Seattle, WA</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
     </div>
   </div>
-  <div class="container">
-    <div class="twelve columns">
-      <h1 class="content-title">Event details</h1>
-      <section class="event-detail">
-        <div class="event-detail-image"></div>
-        <h1>5K Ole!</h1>
-        <h2>4:30pm Saturday 5 April 2014  •  123 Awesome St. Seattle, WA</h2>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
-        <a href="#" class="save-event">Save Event</a>
-        <a href="#" class="icon-facebook soc-link"></a>
-        <a href="#" class="icon-twitter soc-link"></a>
-      </section>
-    </div>
-    <aside class="clearfix four columns">
-      <h1 class="sidebar-title">Similar Events</h1>
-      <ul  class="similar-events">
-        <li>
-          <div class="similar clearfix">
-            <div class="similar-list-pic1">
-            </div>
-            <h1>5K for Kittens</h1>
-            <p class="time">4:30pm Saturday</p>
-            <p class="location">123 Awesome St. Seattle, WA</p>
-          </div>
-        </li>
-        <li>
-          <div class="similar clearfix">
-            <div class="similar-list-pic2">
-            </div>
-            <h1>Mercer Island 5K</h1>
-            <p class="time">4:30pm Saturday</p>
-            <p class="location">123 Awesome St. Seattle, WA</p>
-          </div>
-        </li>
-        <li>
-          <div class="similar clearfix">
-            <div class="similar-list-pic3">
-            </div>
-            <h1>Sounders 5K</h1>
-            <p class="time">4:30pm Saturday</p>
-            <p class="location">123 Awesome St. Seattle, WA</p>
-          </div>
-        </li>
-      </ul>
-    </aside>
-  </div>
+  <footer>
+    <p>©2014 Team Wolverine!</p>
+  </footer>
 </body>
 </html>
