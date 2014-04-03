@@ -86,6 +86,7 @@ a:hover{
 	border-radius: 1.5em;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
+	-webkit-appearance: none;
 }
 
 input[type="password"] {
@@ -101,6 +102,7 @@ input[type="password"] {
 	border-radius: 1.5em;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
+	-webkit-appearance: none;
 }
 
 	input[type="text"]:focus{
@@ -110,6 +112,14 @@ input[type="password"] {
 	input[type="password"]:focus{
 		color: #fff;
 	}
+
+	textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+
+}
 
  .password:before{
  	font-family: 'icomoon'
@@ -214,6 +224,7 @@ input[type="text"], input[type="submit"] {
 	line-height: 1.5em;
 	font-size: 1.5em;
 	font-family: 'Proxima Nova', sans-serif;
+	color: #333;
 }
 
 #panel a:visited{
@@ -497,7 +508,9 @@ EVENT DETAIL PAGES
 			vertical-align: middle;
 		}
 		input[type="text"]{
-			margin: -1em;
+			width: 95%;
+			margin: .95em auto;
+			float: none;
 		}
 
 	}
