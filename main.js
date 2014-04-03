@@ -43,7 +43,7 @@ $(document).ready(function(){
         var title1 = events[i][1];
         var address1 = events[i][2];
         var date1 = events[i][3];
-        $(".event-list").append("<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><p class='time'>" + events[i][3] + "</p><p class='location'>" +  address1 + query + "</p></div></li>");
+        $(".event-list").append("<a href='event-details.html'><li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events[i][0] + ")'></div><h1>" + title1 + "</h1><p class='time'>" + events[i][3] + "</p><p class='location'>" +  address1 + query + "</p></div></li></a>");
       }
     }
     else{
@@ -52,7 +52,7 @@ $(document).ready(function(){
         var title = events2[j][1];
         var address = events2[j][2];
         var date = events2[j][3];
-        $(".event-list").append("<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><p class='time'>" + events2[j][3] + "</p><p class='location'>" +  address + query + "</p></div></li>");
+        $(".event-list").append("<a href='event-details.html'><li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><p class='time'>" + events2[j][3] + "</p><p class='location'>" +  address + query + "</p></div></li></a>");
       }
     }
 
