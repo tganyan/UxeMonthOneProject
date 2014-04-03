@@ -145,6 +145,65 @@ input[type="text"], input[type="submit"] {
   float: left;
 }
 
+/*Menu slider*/
+
+.btn-slide {
+	color: #222;
+	text-decoration: none;
+	text-align: center;
+	background-color: #FFF;
+	width: 100%;
+	height: 2em;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding-top: .25em;
+	font-family: 'Proxima Nova', sans-serif;
+}
+
+.btn-slide a{
+	line-height: 1.5em;
+	font-size: 1.5em;
+
+}
+
+#panel{
+	height: 40%;
+	width: 100%;
+	display: none;
+	background-color: #FFF;
+	color: #333;
+	text-align: center;
+	margin-top: -.3em;
+}
+
+#panel a{
+	display: block;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	font-family: 'Proxima Nova', sans-serif;
+}
+
+#panel a:visited{
+	color: #333;
+}
+
+
+#panel a:hover{
+	color: #888;
+}
+
+.active {
+	display: block;
+
+}
+
+.active a{
+	display: block;
+	text-align: center;
+}
+
 
 /* #Page Styles
 ================================================== */
@@ -271,59 +330,6 @@ EVENT DETAIL PAGES
 	font-size: 1.25em;
 	margin-left: .75em;
 	text-transform: uppercase;
-}
-
-/*Menu slider*/
-
-.btn-slide {
-	color: #222;
-	text-decoration: none;
-	text-align: center;
-	background-color: #FFF;
-	width: 100%;
-	height: 2em;
-	display: block;
-	line-height: 1.5em;
-	font-size: 1.5em;
-	padding-top: .25em;
-}
-
-.btn-slide a{
-	line-height: 1.5em;
-	font-size: 1.5em;
-
-}
-
-#panel{
-	height: 40%;
-	width: 100%;
-	display: none;
-	background-color: #FFF;
-	color: #333;
-	text-align: center;
-	margin-top: -.25em;
-}
-
-#panel a:visited{
-	color: #333;
-
-}
-
-#panel a{
-	display: block;
-	text-align: center;
-	line-height: 1.5em;
-	font-size: 1.5em;
-}
-
-.active {
-	display: block;
-
-}
-
-.active a{
-	display: block;
-	text-align: center;
 }
 
 /*Stylin' and profilin' (profile styles)*/

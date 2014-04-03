@@ -6,9 +6,9 @@ $( window ).resize(function() {
   if( width > 763){
     $( "#panel" ).hide();
   }
-  else{
-    $( "#panel" ).show();
-  }
+  // else{
+  //   $( "#panel" ).show();
+  // }
 });
 
 
