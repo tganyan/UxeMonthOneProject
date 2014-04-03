@@ -86,6 +86,7 @@ a:hover{
 	border-radius: 1.5em;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
+	-webkit-appearance: none;
 }
 
 input[type="password"] {
@@ -101,6 +102,7 @@ input[type="password"] {
 	border-radius: 1.5em;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
+	-webkit-appearance: none;
 }
 
 	input[type="text"]:focus{
@@ -110,6 +112,14 @@ input[type="password"] {
 	input[type="password"]:focus{
 		color: #fff;
 	}
+
+	textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+
+}
 
  .password:before{
  	font-family: 'icomoon'
@@ -138,11 +148,20 @@ input[type="password"] {
 	margin-top: 3em;
  }
 
+ .top-button {
+ 	margin-bottom: 0;
+ }
+
+ .header-margin {
+ 	margin-bottom: -1em;
+ }
+
  /***********
  SEARCH STUFF
  ***********/
 
- input[type=submit]{
+ input[type=submit],
+ button{
  	font-family: 'Proxima Nova Rg', sans-serif;
  	position: relative;
   vertical-align: top;
@@ -162,7 +181,8 @@ input[type="password"] {
   margin-top: .5em;
  }
 
- input[type=submit]:hover{
+ input[type=submit]:hover,
+ button:hover{
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -171,6 +191,8 @@ input[type="password"] {
   border-bottom: 2px solid #2C7386;
   box-shadow: inset 0 -2px #2C7386;
  }
+
+
 
 input[type="text"], input[type="submit"] {
   float: left;
@@ -214,6 +236,7 @@ input[type="text"], input[type="submit"] {
 	line-height: 1.5em;
 	font-size: 1.5em;
 	font-family: 'Proxima Nova', sans-serif;
+	color: #333;
 }
 
 #panel a:visited{
@@ -497,7 +520,9 @@ EVENT DETAIL PAGES
 			vertical-align: middle;
 		}
 		input[type="text"]{
-			margin: -1em;
+			width: 95%;
+			margin: .95em auto;
+			float: none;
 		}
 
 	}
