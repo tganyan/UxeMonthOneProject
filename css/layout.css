@@ -87,7 +87,7 @@
  	margin: .5em 0;
  	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
  	color: #fff;
-	border-radius: 1.5em;
+	border-radius: 0;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
 	-webkit-appearance: none;
@@ -103,7 +103,7 @@ input[type="password"] {
  	margin: .5em 0;
  	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
  	color: #fff;
-	border-radius: 1.5em;
+	border-radius: 0;
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
 	-webkit-appearance: none;
@@ -170,17 +170,15 @@ input[type="submit"] {
  	position: relative;
   vertical-align: top;
   width: 100%;
-  height: 2em;
-  padding: 0;
+  height: 2.1em;
+  padding: 0.1em;
   font-size: 1.5em;
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #3895AD;
+  background: #c57d51;
   border: 0;
-  border-bottom: 2px solid #2C7386;
   cursor: pointer;
-  box-shadow: inset 0 -2px #2C7386;
   border-radius: 0;
   margin-top: .5em;
   transition: background-color .5s ease;
@@ -191,10 +189,8 @@ input[type="submit"] {
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #2C7386;
+  background: #bf6340;
   border: 0;
-  border-bottom: 2px solid #2C7386;
-  box-shadow: inset 0 -2px #2C7386;
  }
 
 
