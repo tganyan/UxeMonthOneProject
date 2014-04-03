@@ -87,7 +87,27 @@ a:hover{
 	padding-left: 1em;
 	font-family: 'Proxima Nova Rg', sans-serif;
 }
+
+input[type="password"] {
+  border: 3px #FFF;
+  font-size: 1.5em;
+  background-color: rgba(240,240,240,.0);
+  min-height: 2em;
+  width: 100%;
+	display: block;
+ 	margin: .5em 0;
+ 	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+ 	color: #fff;
+	border-radius: 1.5em;
+	padding-left: 1em;
+	font-family: 'Proxima Nova Rg', sans-serif;
+}
+
 	input[type="text"]:focus{
+		color: #fff;
+	}
+
+	input[type="password"]:focus{
 		color: #fff;
 	}
 
