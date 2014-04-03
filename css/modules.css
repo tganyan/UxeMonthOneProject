@@ -116,7 +116,7 @@ SIDEBAR
 
 .filterbox{
   background-color: transparent;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  /*box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);*/
   border-radius: 2.5%;
 }
 
@@ -148,7 +148,7 @@ input[type='checkbox'] + label {
   color: #FFF;
   font-family: 'Proxima Nova Rg', sans-serif;
   margin-top: 1.7em;
-  margin-left: 1.2em;
+  margin-left: .2em;
 }
 
 input[type='checkbox'] + label:before,

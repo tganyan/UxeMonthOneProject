@@ -60,7 +60,11 @@
  	display: inline-block;
  }
 
-a:hover{
+ a{
+ 	text-decoration: none;
+ }
+
+ a:hover{
  	color: #CCC;
  }
 
