@@ -219,6 +219,10 @@ input[type="text"], input[type="submit"] {
 	font-family: 'Proxima Nova', sans-serif;
 }
 
+a.btn-slide{
+	color: #fff;
+}
+
 #panel{
 	height: 40%;
 	width: 100%;
@@ -522,6 +526,10 @@ EVENT DETAIL PAGES
 			width: 95%;
 			margin: .95em auto;
 		}
+
+		input[type="text"], input[type="submit"] {
+  float: none;
+}
 
 	}
 
