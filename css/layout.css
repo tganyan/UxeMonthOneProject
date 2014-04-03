@@ -213,6 +213,14 @@ EVENT DETAIL PAGES
 	line-height: 1.2em;
 }
 
+.event-detail h3{
+	margin: .5em 0 -.5em 1em;
+	font-size: 1em;
+	font-family: 'AlternateGothic2 BT';
+	font-weight: bold;
+	line-height: 1em;
+}
+
 .event-detail-image{
 	background:url('../images/5kole.jpg') no-repeat center center;
   background-size: cover;
@@ -318,6 +326,23 @@ EVENT DETAIL PAGES
 	text-align: center;
 }
 
+/*Stylin' and profilin' (profile styles)*/
+
+.profile-image{
+	background:url('../images/profileImage.png') no-repeat center center;
+  background-size: cover;
+  margin-top: 2em;
+  width: 100%;
+  height: 25em;
+}
+
+.prof-bot-margin {
+	margin-bottom: -.5em;
+}
+
+.prof-title-margin {
+	margin-bottom: 1em;
+}
 
 /* #Media Queries
 ================================================== */

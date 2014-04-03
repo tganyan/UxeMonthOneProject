@@ -12,38 +12,60 @@
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 </head>
 <body>
-  <header class="container row">
+  <nav id="panel">
+    <a href="login.html">Sign Out</a>
+    <a href="saved-events.html">My Saved Events</a>
+    <a href="event-list.html">Categories</a>
+    <a href="profile.html">My Profile</a>
+  </nav>
+  <a href="#" class="btn-slide">Menu</a>
+  <header class ="container">
     <div class="one-third column">
-      <img src="img/logo.svg" alt="Logo">
+      <a href="event-list.html"><img src="img/logo.svg" alt="Logo"></a>
     </div>
     <div class="two-thirds column">
-      <nav class="full-nav a">
-        <a href="#" class="margin-left">Sign Out</a>
-        <a href="#" class="margin-left">My Saved Events</a>
-        <a href="#" class="margin-left">Categories</a>
-        <a href="#">My Profile</a>
+      <nav class="full-nav">
+        <a href="login.html">Sign Out</a>
+        <a href="saved-events.html">My Saved Events</a>
+        <a href="event-list.html">Categories</a>
+        <a href="profile.html">My Profile</a>
       </nav>
     </div>
   </header>
   <div class="container">
-    <div class="twelve columns">
-  <figure>
-    <img src="images/daleProfile.png" alt="profile image">
-    <figcaption>Dale Sande</figcaption>
-  </figure>
-  <article>
-    <section>
-      <h2>About</h2>
-      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
-    </section>
-    <section>
-      <h3>Professional Background</h3>
-    </section>
-    <section>
-      <h3>Location</h3>
-    </section>
-  </article>
-  </div>
+    <div class="sixteen columns">
+      <fieldset class="clearfix">
+        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
+        <input type="text" class="left" id="zipCode" name="zip" placeholder="Enter Zip Code">
+        <input type="submit" class=" left" id="searchSubmit" value="Find Events!"></input>
+      </fieldset>
+    </div>
+    <div class="six columns profile-image">
+    </div>
+    <article class="six columns">
+      <section class="event-detail">
+        <h1 class="prof-title-margin">Guy McDuderson</h1>
+        <h2 class="prof-bot-margin">About</h2>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aliquam facere quidem est beatae sapiente quam aliquid alias quod ut voluptatibus, rem animi temporibus. Facere, voluptatibus magni autem assumenda modi.</span><span>Rem excepturi corporis voluptas possimus aliquam, odit, repudiandae ab fugiat non sequi et, eos optio eum saepe eligendi nemo tenetur quod beatae. Vel, commodi officiis porro molestiae iste aliquid quaerat!</span></p>
+        <hr>
+        <h2>Professional Background</h2>
+        <ul>
+          <li>
+            <h3>Recent Employers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </li>
+          <li>
+            <p>Facere, voluptatibus magni autem assumenda modi.</p>
+          </li>
+          <li>
+            <p>Perferendis aliquam facere quidem est beatae sapiente.</p>
+          </li>
+        </ul>
+        <hr>
+        <h2>Hosted Events</h2>
+        <p>You currently have no hosted events</p>
+      </section>
+    </article>
     <aside class="clearfix four columns">
       <a href="#"><h1 class="sidebar-title">Saved Events</h1></a>
       <ul class="similar-events">
