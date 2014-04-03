@@ -22,6 +22,17 @@
 
  html, body{
  	width: 100%;
+ 	height: 100%
+ }
+
+ .page-wrap{
+ 	min-height: 100%;
+ 	margin-bottom: 1em;
+ }
+
+ .page-wrap:after{
+ 	content: "";
+ 	display: block;
  }
 
  img{
@@ -202,6 +213,18 @@ input[type="text"], input[type="submit"] {
 .active a{
 	display: block;
 	text-align: center;
+}
+
+
+footer{
+	height: 5em;
+	width: 100%;
+	background-color: rgba(5,5,5,.5);
+}
+
+footer p{
+	padding-top: 1.75em;
+	padding-left: 2em;
 }
 
 

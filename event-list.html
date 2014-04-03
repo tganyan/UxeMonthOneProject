@@ -13,77 +13,82 @@
   <script src="main.js"></script>
 </head>
 <body>
-  <nav id="panel">
-        <a href="#">Sign Out</a>
-        <a href="#">My Saved Events</a>
-        <a href="#">Categories</a>
-        <a href="#">My Profile</a>
-  </nav>
-  <a href="#" class="btn-slide">Menu</a>
-  <header class ="container">
-    <div class="one-third column">
-      <img src="img/logo.svg" alt="Logo">
+  <div class="page-wrap">
+    <nav id="panel">
+          <a href="#">Sign Out</a>
+          <a href="#">My Saved Events</a>
+          <a href="#">Categories</a>
+          <a href="#">My Profile</a>
+    </nav>
+    <a href="#" class="btn-slide">Menu</a>
+    <header class ="container">
+      <div class="one-third column">
+        <img src="img/logo.svg" alt="Logo">
+      </div>
+      <div class="two-thirds column">
+        <nav class="full-nav">
+          <a href="#">Sign Out</a>
+          <a href="#">My Saved Events</a>
+          <a href="#">Categories</a>
+          <a href="#">My Profile</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sixteen columns">
+        <fieldset class="search">
+          <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
+          <input type="text" id="zipCode" class="left"  name="zip" placeholder="Enter Zip Code">
+          <input type="submit" class="left" id="searchSubmit" value="Find Events!"></input>
+        </fieldset>
+      </div>
+      <div class="twelve columns">
+        <h1 class="header">Events Near You</h1>
+        <ul class="event-list ">
+        </ul>
+      </div>
+      <aside class="clearfix four columns">
+        <ul  class="similar-events">
+          <li>
+            <li>
+            <h1 class="sidebar-title">Category Filter</h1>
+            <div class="nearby filterbox clearfix">
+              <form action="">
+                <input type="checkbox" id="c1" name="music"/><label for="c1">Music</label>
+                <input type="checkbox" id="c2" name="art"/><label for="c2">Art</label>
+                <input type="checkbox" id="c3" name="food"/><label for="c3">Food</label>
+                <input type="checkbox" id="c4" name="theatre"/><label for="c4">Theatre</label>
+                <input type="checkbox" id="c5" name="cats"/><label for="c5">Cats</label>
+                <input type="checkbox" id="c6" name="technology"/><label for="c6">Technology</label>
+              </form>
+            </div>
+          </li>
+            <h1 class="sidebar-title">Nearby Venues</h1>
+            <div class="nearby clearfix">
+              <div class="venue1">
+              </div>
+              <h1>The Showbox</h1>
+              <p class="time">Live Music</p>
+              <p class="location">123 Awesome St. Seattle, WA</p>
+              <p class="phone">888.555.1212</p>
+            </div>
+          </li>
+          <li>
+            <div class="nearby clearfix">
+              <div class="venue2">
+              </div>
+              <h1>El Corazon</h1>
+              <p class="time">Live Music</p>
+              <p class="location">123 Awesome St. Seattle, WA</p>
+              <p class="phone">888.555.1212</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
     </div>
-    <div class="two-thirds column">
-      <nav class="full-nav">
-        <a href="#">Sign Out</a>
-        <a href="#">My Saved Events</a>
-        <a href="#">Categories</a>
-        <a href="#">My Profile</a>
-      </nav>
-    </div>
-  </header>
-  <div class="container">
-    <div class="sixteen columns">
-      <fieldset class="search">
-        <input type="text" class="left" id="searchCategories" name="category" placeholder="Search Events">
-        <input type="text" id="zipCode" class="left"  name="zip" placeholder="Enter Zip Code">
-        <input type="submit" class="left" id="searchSubmit" value="Find Events!"></input>
-      </fieldset>
-    </div>
-    <div class="twelve columns">
-      <h1 class="header">Events Near You</h1>
-      <ul class="event-list ">
-      </ul>
-    </div>
-  <aside class="clearfix four columns">
-    <ul  class="similar-events">
-      <li>
-        <li>
-        <h1 class="sidebar-title">Category Filter</h1>
-        <div class="nearby filterbox clearfix">
-          <form action="">
-            <input type="checkbox" id="c1" name="music"/><label for="c1">Music</label>
-            <input type="checkbox" id="c2" name="art"/><label for="c2">Art</label>
-            <input type="checkbox" id="c3" name="food"/><label for="c3">Food</label>
-            <input type="checkbox" id="c4" name="theatre"/><label for="c4">Theatre</label>
-            <input type="checkbox" id="c5" name="cats"/><label for="c5">Cats</label>
-            <input type="checkbox" id="c6" name="technology"/><label for="c6">Technology</label>
-          </form>
-        </div>
-      </li>
-        <h1 class="sidebar-title">Nearby Venues</h1>
-        <div class="nearby clearfix">
-          <div class="venue1">
-          </div>
-          <h1>The Showbox</h1>
-          <p class="time">Live Music</p>
-          <p class="location">123 Awesome St. Seattle, WA</p>
-          <p class="phone">888.555.1212</p>
-        </div>
-      </li>
-      <li>
-        <div class="nearby clearfix">
-          <div class="venue2">
-          </div>
-          <h1>El Corazon</h1>
-          <p class="time">Live Music</p>
-          <p class="location">123 Awesome St. Seattle, WA</p>
-          <p class="phone">888.555.1212</p>
-        </div>
-      </li>
-
-    </ul>
-  </aside>
+  </div>
+  <footer>
+    <p>©2014 Team Wolverine!</p>
+  </footer>
 </body>
 </html>
