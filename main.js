@@ -55,6 +55,16 @@ $(document).ready(function(){
         $(".event-list").append("<li class='event-entry'><div class='item clearfix'><div class='event-list-pic' style='background-image:url(" + events2[j][0] + ")'></div><h1>" + title + "</h1><p class='time'>" + events2[j][3] + "</p><p class='location'>" +  address + query + "</p></div></li>");
       }
     }
+
+  $('.item').hover(
+     function () {
+       $(this).css({"background-color":"rgba(220, 230,230,0.7)"});
+     },
+     function () {
+       $(this).css({"background-color":"rgba(240,240,240,0.7"});
+     }
+  );
+
     return false;
   };
 
@@ -69,4 +79,7 @@ $(document).ready(function(){
       Search();
     }
   });
+
 });
+
+
