@@ -526,7 +526,7 @@ EVENT DETAIL PAGES
 			width: 80%
 			vertical-align: middle;
 		}
-		input[type="text"]{
+		input[type="text"], input[type="password"]{
 			width: 95%;
 			margin: .95em auto;
 		}
