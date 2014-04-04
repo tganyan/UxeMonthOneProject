@@ -601,6 +601,12 @@ EVENT DETAIL PAGES
 	input[type="submit"]{
 		margin-top: 1em;
 	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="submit"]{
+		float: none;
+	}
 	/*.full-nav a {
 		font-size: 1em;
 		float: right;
