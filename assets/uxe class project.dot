@@ -1,0 +1,13 @@
+digraph{
+  node[shape=box]
+  "Login/Landing" -> "Search Function (empty state)"
+
+  "Search Function (empty state)" -> "Event List" [label="search by category/zip"]
+  "Search Function (empty state)" -> "Profile Page/Saved Events"
+  "Search Function (empty state)" -> "Featured Events/Friend's Events"
+
+
+  "Event List" -> "Event Detail" [label="event selection"]
+  "Event List" -> "Featured Events/Friend's Events"
+  "Event List" -> "Profile Page/Saved Events"
+}
