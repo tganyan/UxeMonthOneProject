@@ -530,9 +530,9 @@ EVENT DETAIL PAGES
 			margin: .95em auto;
 		}
 
-		input[type="text"], input[type="submit"] {
+		/*input[type="text"], input[type="submit"] {
   float: none;
-}
+}*/
 
 	}
 
